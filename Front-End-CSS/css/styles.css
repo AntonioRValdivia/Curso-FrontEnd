@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  font-size: 1rem;
+}
+
+
+/* -------------------------------header estilos----- ----------------*/
+/* Le doy la habilidad de ser flex y separo cada elemento en espacios iguales */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 10%;
+}
+
+/* --------------------Nav estilos----------------------- */
+/* color, font, adornos...etc */
+.main-nav__item, a, .hoax{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* que el cursor cambie cuando pasa por el logo */
+.logo{
+  cursor: pointer;
+}
+
+/* cada elemento de la lista ahora está en forma horizontal y la separacion entre cada uno */
+.main-nav__item{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* como son hipervinculo, al pasar el cursor por encima cambia de color, este es el tiempo de la transición */
+.main-nav__item a{
+  transition: all 0.3s ease 0s;
+}
+
+/* color de la transición */
+.main-nav__item a:hover{
+  color: #0088a9;
+}
+
+/* estilos del boton... color, bordes, etc */
+button{
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* tambien cambia de color */
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+
+/* ------------------------------Secciones------------------------- */
+
+/* Alineando cada sección con flex  */
+.main-container{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;  
+}
+
+.main-container .section{
+  border: 2px solid black;
+}
+
+.containers-section1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.containers-section1 .container{
+  display: flex;
+  flex-direction: column;
+  flex-direction: wrap;
+  border: 2px solid black;
+  max-width: 50vw;
+}
+
+
+
+

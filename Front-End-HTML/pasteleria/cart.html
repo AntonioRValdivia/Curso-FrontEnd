@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geek Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/cart.css">
+  <script src="https://kit.fontawesome.com/9983646e1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  
+  <!-- formulario -->
+  <div class="container">
+    <a href="./index.html">Home</a>
+    <div class="title">Ingresa los datos de pedido</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Ingrese su nombre</span>
+          <input type="text" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Dirección</span>
+          <input type="text" placeholder="Ingresa tu dirección" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Teléfono</span>
+          <input type="tel" placeholder="Ingresa tu teléfono" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Correo</span>
+          <input type="email" placeholder="Ingresa tu correo" required>
+        </div>
+      </div>
+      <div class="detalles-pedido"></div>
+        <span class="titulo-detalles">Sabor y adornos</span><br>  
+        <div class="sabor"><br>
+        <span class="details">Ingrese el sabor o sabores(máximo 3):</span><br>  
+        <input type="checkbox" id="sabor1" name="sabor1" value="Dark-Vader">
+        <label for="sabor1">Dark Vader</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="White-Trooper">
+        <label for="sabor2">White Trooper</label>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Iron-Mancake">
+        <label for="sabor3">Iron-Mancake</label>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Galaxy-Cake">
+        <label for="sabor4">Galaxy Cake</label>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Baby-Yoda-Apple-Cake">
+        <label for="sabor5">Baby Yoda Apple Cake</label>
+        <input type="checkbox" id="sabor6" name="sabor6" value="Mandalorian-Cake">
+        <label for="sabor6">Mandalorian Cake</label><br>
+      </div><br>
+      <div class="adornos">
+        <span class="details">Ingrese adorno o adornos(máximo 3):</span><br>
+        <input type="checkbox" id="adorno1" name="adorno1" value="Chocolate-Blocks">
+        <label for="adorno1">Chocolate Blocks</label><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="Glass-Stars">
+        <label for="adorno2">Glass Stars</label>
+        <input type="checkbox" id="adorno3" name="adorno3" value="Jungle-Fruit">
+        <label for="adorno3">Jungle Fruit</label>
+        <input type="checkbox" id="adorno4" name="adorno4" value="Geek-Saludable">
+        <label for="adorno4">Geek Saludable</label>
+        <input type="checkbox" id="adorno5" name="adorno5" value="Tetris-Candy">
+        <label for="adorno5">Tetris Candy</label>
+        <input type="checkbox" id="adorno6" name="adorno6" value="Organic-Geek">
+        <label for="adorno6">Organic Geek</label>
+      </div>
+      <div class="button">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
